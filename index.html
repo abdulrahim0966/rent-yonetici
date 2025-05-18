@@ -2,29 +2,20 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rent A Car Giriş</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div class="login-container">
-    <div class="header">
-      <img src="logo.png" alt="Logo" class="logo" />
-      <h1>İmam Efendi Rent A Car</h1>
-    </div>
-
-    <div class="login-box">
-      <input type="text" id="username" placeholder="Kullanıcı Adı" />
-      <input type="password" id="password" placeholder="Şifre" />
-      <button onclick="F1()">Giriş</button>
-      <a href="#" onclick="showForgotPassword()">Şifremi Unuttum</a>
-      <p id="error" class="error-msg"></p>
-      <p id="forgot-password" class="forgot-msg" style="display:none;">
-        05316150319 bu numara ile iletişime geçin
-      </p>
-    </div>
+    <img src="img/logo.png" alt="Logo" style="width: 80px;" />
+    <h2>Rent A Car Yönetici Girişi</h2>
+    <input type="text" id="username" placeholder="Kullanıcı Adı" />
+    <input type="password" id="password" placeholder="Şifre" />
+    <button onclick="F1()">Giriş Yap</button>
+    <p><a href="#" onclick="alert('05316150319 bu numara ile iletişime geçin')">Şifremi unuttum</a></p>
+    <p id="loginMessage"></p>
   </div>
 
-  <script src="login.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>
