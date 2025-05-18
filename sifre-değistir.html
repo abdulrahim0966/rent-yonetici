@@ -2,18 +2,25 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Şifre Değiştir</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body onload="checkAccess()">
-  <div class="change-password-container">
-    <h2>Şifre Değiştir</h2>
-    <input type="password" id="newPassword" placeholder="Yeni Şifre" />
-    <input type="password" id="confirmPassword" placeholder="Yeni Şifre (Tekrar)" />
-    <button onclick="changePassword()">Kaydet</button>
-    <p id="message"></p>
+<body onload="checkAccess()" class="login-body">
+  <div class="login-container">
+    <div class="login-header">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+      <h1 class="title">Şifre Değiştir</h1>
+    </div>
+    <div class="login-form">
+      <input type="password" id="newPassword" placeholder="Yeni Şifre" />
+      <input type="password" id="confirmPassword" placeholder="Yeni Şifre (Tekrar)" />
+      <button onclick="changePassword()">Kaydet</button>
+      <p id="message" class="message"></p>
+    </div>
   </div>
 
+  <script src="js/config.js"></script>
   <script src="js/sifre-degistir.js"></script>
 </body>
 </html>
