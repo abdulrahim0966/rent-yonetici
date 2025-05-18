@@ -2,25 +2,29 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <title>Rent A Car Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent A Car - Panel</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body onload="kontrolEt()">
-  <div class="navbar">
-    <div class="navbar-left">
-      <img src="img/logo.png" class="logo-small" />
-      <span class="company-name">Rent A Car Panel</span>
+<body onload="checkAccess()" class="panel-body">
+  <header class="panel-header">
+    <div class="logo-title">
+      <img src="assets/logo.png" class="header-logo" />
+      <h1>Rent A Car Panel</h1>
     </div>
-    <div class="navbar-right">
-      <img src="img/user.png" class="user-icon" onclick="toggleMenu()" />
-      <div class="user-menu hidden" id="menu">
+    <div class="user-menu">
+      <img src="assets/user.png" class="user-icon" onclick="toggleMenu()" />
+      <div id="dropdown" class="dropdown-menu">
         <a href="sifre-degistir.html">Şifre Değiştir</a>
-        <a href="#" onclick="cikis()">Çıkış Yap</a>
+        <a href="#" onclick="logout()">Çıkış Yap</a>
       </div>
     </div>
-  </div>
+  </header>
 
-  <!-- Ana içerik buraya SPA gibi dinamik olarak gelecektir -->
+  <main>
+    <h2>Hoş geldiniz</h2>
+    <!-- Diğer component'ler burada yüklenecek -->
+  </main>
 
   <script src="js/karkas.js"></script>
 </body>
