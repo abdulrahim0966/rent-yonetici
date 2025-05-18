@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent A Car Giriş</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="header">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h1>İmam Efendi Rent A Car</h1>
+    </div>
+
+    <div class="login-box">
+      <input type="text" id="username" placeholder="Kullanıcı Adı" />
+      <input type="password" id="password" placeholder="Şifre" />
+      <button onclick="F1()">Giriş</button>
+      <a href="#" onclick="showForgotPassword()">Şifremi Unuttum</a>
+      <p id="error" class="error-msg"></p>
+      <p id="forgot-password" class="forgot-msg" style="display:none;">
+        05316150319 bu numara ile iletişime geçin
+      </p>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
