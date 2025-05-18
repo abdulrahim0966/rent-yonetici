@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rent A Car Panel</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="kontrolEt()">
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="img/logo.png" class="logo-small" />
+      <span class="company-name">Rent A Car Panel</span>
+    </div>
+    <div class="navbar-right">
+      <img src="img/user.png" class="user-icon" onclick="toggleMenu()" />
+      <div class="user-menu hidden" id="menu">
+        <a href="sifre-degistir.html">Şifre Değiştir</a>
+        <a href="#" onclick="cikis()">Çıkış Yap</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ana içerik buraya SPA gibi dinamik olarak gelecektir -->
+
+  <script src="js/karkas.js"></script>
+</body>
+</html>
