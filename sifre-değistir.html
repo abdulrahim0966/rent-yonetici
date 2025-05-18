@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Şifre Değiştir</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="checkAccess()">
+  <div class="change-password-container">
+    <h2>Şifre Değiştir</h2>
+    <input type="password" id="newPassword" placeholder="Yeni Şifre" />
+    <input type="password" id="confirmPassword" placeholder="Yeni Şifre (Tekrar)" />
+    <button onclick="changePassword()">Kaydet</button>
+    <p id="message"></p>
+  </div>
+
+  <script src="js/sifre-degistir.js"></script>
+</body>
+</html>
