@@ -1,0 +1,130 @@
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f2f5;
+}
+
+/* Ortak buton */
+button {
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0059b3;
+}
+
+/* Giriş ekranı */
+.login-container {
+  width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+}
+
+.login-container input {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.login-container p {
+  margin-top: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-small {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  position: relative;
+}
+
+.user-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 150px;
+  box-shadow: 0 0 5px gray;
+}
+
+.user-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.user-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Şifre değiştirme */
+.change-password-container {
+  width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+}
+
+.change-password-container input {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+#message {
+  margin-top: 10px;
+  color: red;
+}
