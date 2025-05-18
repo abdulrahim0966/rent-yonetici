@@ -2,20 +2,31 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <title>Giriş Yap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent A Car - Giriş</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="login-body">
   <div class="login-container">
-    <img src="img/logo.png" alt="Logo" style="width: 80px;" />
-    <h2>Rent A Car Yönetici Girişi</h2>
-    <input type="text" id="username" placeholder="Kullanıcı Adı" />
-    <input type="password" id="password" placeholder="Şifre" />
-    <button onclick="F1()">Giriş Yap</button>
-    <p><a href="#" onclick="alert('05316150319 bu numara ile iletişime geçin')">Şifremi unuttum</a></p>
-    <p id="loginMessage"></p>
+    <div class="login-header">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+      <h1 class="title">Rent A Car Yönetim Paneli</h1>
+    </div>
+    <div class="login-form">
+      <input type="text" id="username" placeholder="Kullanıcı Adı" />
+      <input type="password" id="password" placeholder="Şifre" />
+      <button onclick="F1()">Giriş Yap</button>
+      <p class="forgot-password">
+        <a href="#" onclick="alert('Şifrenizi unuttuysanız 0531 615 03 19 numarasıyla iletişime geçin.')">
+          Şifremi unuttum
+        </a>
+      </p>
+      <p id="loginMessage" class="message"></p>
+    </div>
   </div>
 
+  <script src="js/config.js"></script>
   <script src="js/login.js"></script>
 </body>
 </html>
+v
