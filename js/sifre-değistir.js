@@ -1,3 +1,5 @@
+// config.js'den API_URL çekiliyor
+
 function checkAccess() {
   if (localStorage.getItem("girisYapildi") !== "yes") {
     window.location.href = "index.html";
@@ -20,7 +22,7 @@ function changePassword() {
     return;
   }
 
-  fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+  fetch(API_URL, {
     method: "POST",
     body: JSON.stringify({
       action: "updatePassword",
